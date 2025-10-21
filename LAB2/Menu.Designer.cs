@@ -28,85 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Bai1 = new System.Windows.Forms.Button();
+            this.Bai2 = new System.Windows.Forms.Button();
+            this.Bai3 = new System.Windows.Forms.Button();
+            this.Bai4 = new System.Windows.Forms.Button();
+            this.Bai5 = new System.Windows.Forms.Button();
+            this.Bai6 = new System.Windows.Forms.Button();
+            this.Bai7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Bai1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(33, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Bài 1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Bai1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai1.Location = new System.Drawing.Point(44, 24);
+            this.Bai1.Name = "Bai1";
+            this.Bai1.Size = new System.Drawing.Size(87, 37);
+            this.Bai1.TabIndex = 0;
+            this.Bai1.Text = "Bài 1";
+            this.Bai1.UseVisualStyleBackColor = true;
+            this.Bai1.Click += new System.EventHandler(this.Bai1_Click);
             // 
-            // button2
+            // Bai2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(138, 45);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Bài 2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Bai2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai2.Location = new System.Drawing.Point(44, 67);
+            this.Bai2.Name = "Bai2";
+            this.Bai2.Size = new System.Drawing.Size(87, 37);
+            this.Bai2.TabIndex = 1;
+            this.Bai2.Text = "Bài 2";
+            this.Bai2.UseVisualStyleBackColor = true;
+            this.Bai2.Click += new System.EventHandler(this.Bai2_Click);
             // 
-            // button3
+            // Bai3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(33, 131);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 37);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Bài 3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Bai3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai3.Location = new System.Drawing.Point(44, 110);
+            this.Bai3.Name = "Bai3";
+            this.Bai3.Size = new System.Drawing.Size(87, 37);
+            this.Bai3.TabIndex = 2;
+            this.Bai3.Text = "Bài 3";
+            this.Bai3.UseVisualStyleBackColor = true;
+            this.Bai3.Click += new System.EventHandler(this.Bai3_Click);
             // 
-            // button4
+            // Bai4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(138, 131);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 37);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Bài 4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Bai4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai4.Location = new System.Drawing.Point(44, 153);
+            this.Bai4.Name = "Bai4";
+            this.Bai4.Size = new System.Drawing.Size(87, 37);
+            this.Bai4.TabIndex = 3;
+            this.Bai4.Text = "Bài 4";
+            this.Bai4.UseVisualStyleBackColor = true;
+            this.Bai4.Click += new System.EventHandler(this.Bai4_Click);
             // 
-            // button5
+            // Bai5
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(33, 219);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(87, 37);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Bài 5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Bai5.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai5.Location = new System.Drawing.Point(44, 196);
+            this.Bai5.Name = "Bai5";
+            this.Bai5.Size = new System.Drawing.Size(87, 37);
+            this.Bai5.TabIndex = 4;
+            this.Bai5.Text = "Bài 5";
+            this.Bai5.UseVisualStyleBackColor = true;
+            this.Bai5.Click += new System.EventHandler(this.Bai5_Click);
             // 
-            // button6
+            // Bai6
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(138, 219);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(87, 37);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Bài 6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Bai6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai6.Location = new System.Drawing.Point(44, 239);
+            this.Bai6.Name = "Bai6";
+            this.Bai6.Size = new System.Drawing.Size(87, 37);
+            this.Bai6.TabIndex = 5;
+            this.Bai6.Text = "Bài 6";
+            this.Bai6.UseVisualStyleBackColor = true;
+            this.Bai6.Click += new System.EventHandler(this.Bai6_Click);
+            // 
+            // Bai7
+            // 
+            this.Bai7.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bai7.Location = new System.Drawing.Point(44, 282);
+            this.Bai7.Name = "Bai7";
+            this.Bai7.Size = new System.Drawing.Size(87, 37);
+            this.Bai7.TabIndex = 6;
+            this.Bai7.Text = "Bài 7";
+            this.Bai7.UseVisualStyleBackColor = true;
+            this.Bai7.Click += new System.EventHandler(this.Bai7_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 297);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(175, 342);
+            this.Controls.Add(this.Bai7);
+            this.Controls.Add(this.Bai6);
+            this.Controls.Add(this.Bai5);
+            this.Controls.Add(this.Bai4);
+            this.Controls.Add(this.Bai3);
+            this.Controls.Add(this.Bai2);
+            this.Controls.Add(this.Bai1);
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);
@@ -115,12 +134,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Bai1;
+        private System.Windows.Forms.Button Bai2;
+        private System.Windows.Forms.Button Bai3;
+        private System.Windows.Forms.Button Bai4;
+        private System.Windows.Forms.Button Bai5;
+        private System.Windows.Forms.Button Bai6;
+        private System.Windows.Forms.Button Bai7;
     }
 }
 
