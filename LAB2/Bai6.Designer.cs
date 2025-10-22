@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.grpNhap = new System.Windows.Forms.GroupBox();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.lbQuyenmoi = new System.Windows.Forms.Label();
+            this.tbQuyen = new System.Windows.Forms.TextBox();
+            this.tbNguoimoi = new System.Windows.Forms.TextBox();
+            this.checkNguoimoi = new System.Windows.Forms.CheckBox();
+            this.cbNguoidonggop = new System.Windows.Forms.ComboBox();
+            this.btRandom = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btThem = new System.Windows.Forms.Button();
             this.btBrowse = new System.Windows.Forms.Button();
@@ -36,17 +43,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbTenmon = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btRandom = new System.Windows.Forms.Button();
             this.splitMain = new System.Windows.Forms.SplitContainer();
             this.lvMon = new System.Windows.Forms.ListView();
-            this.pbPic = new System.Windows.Forms.PictureBox();
             this.lbNguoidonggop = new System.Windows.Forms.Label();
-            this.cbNguoidonggop = new System.Windows.Forms.ComboBox();
-            this.checkNguoimoi = new System.Windows.Forms.CheckBox();
-            this.tbNguoimoi = new System.Windows.Forms.TextBox();
-            this.tbQuyen = new System.Windows.Forms.TextBox();
-            this.lbQuyenmoi = new System.Windows.Forms.Label();
-            this.btXoa = new System.Windows.Forms.Button();
+            this.pbPic = new System.Windows.Forms.PictureBox();
             this.grpNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
             this.splitMain.Panel1.SuspendLayout();
@@ -79,6 +79,66 @@
             this.grpNhap.TabIndex = 0;
             this.grpNhap.TabStop = false;
             this.grpNhap.Text = "Nhập món ăn";
+            // 
+            // btXoa
+            // 
+            this.btXoa.Location = new System.Drawing.Point(493, 100);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(108, 34);
+            this.btXoa.TabIndex = 12;
+            this.btXoa.Text = "Xóa món";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
+            // 
+            // lbQuyenmoi
+            // 
+            this.lbQuyenmoi.AutoSize = true;
+            this.lbQuyenmoi.Location = new System.Drawing.Point(42, 119);
+            this.lbQuyenmoi.Name = "lbQuyenmoi";
+            this.lbQuyenmoi.Size = new System.Drawing.Size(82, 16);
+            this.lbQuyenmoi.TabIndex = 11;
+            this.lbQuyenmoi.Text = "Quyền hạn:";
+            // 
+            // tbQuyen
+            // 
+            this.tbQuyen.Location = new System.Drawing.Point(130, 116);
+            this.tbQuyen.Name = "tbQuyen";
+            this.tbQuyen.Size = new System.Drawing.Size(88, 24);
+            this.tbQuyen.TabIndex = 10;
+            // 
+            // tbNguoimoi
+            // 
+            this.tbNguoimoi.Location = new System.Drawing.Point(130, 86);
+            this.tbNguoimoi.Name = "tbNguoimoi";
+            this.tbNguoimoi.Size = new System.Drawing.Size(169, 24);
+            this.tbNguoimoi.TabIndex = 9;
+            // 
+            // checkNguoimoi
+            // 
+            this.checkNguoimoi.AutoSize = true;
+            this.checkNguoimoi.Location = new System.Drawing.Point(130, 63);
+            this.checkNguoimoi.Name = "checkNguoimoi";
+            this.checkNguoimoi.Size = new System.Drawing.Size(165, 20);
+            this.checkNguoimoi.TabIndex = 1;
+            this.checkNguoimoi.Text = "Người đóng góp mới?";
+            this.checkNguoimoi.UseVisualStyleBackColor = true;
+            // 
+            // cbNguoidonggop
+            // 
+            this.cbNguoidonggop.FormattingEnabled = true;
+            this.cbNguoidonggop.Location = new System.Drawing.Point(130, 86);
+            this.cbNguoidonggop.Name = "cbNguoidonggop";
+            this.cbNguoidonggop.Size = new System.Drawing.Size(169, 24);
+            this.cbNguoidonggop.TabIndex = 8;
+            // 
+            // btRandom
+            // 
+            this.btRandom.Location = new System.Drawing.Point(607, 100);
+            this.btRandom.Name = "btRandom";
+            this.btRandom.Size = new System.Drawing.Size(108, 34);
+            this.btRandom.TabIndex = 7;
+            this.btRandom.Text = "Random";
+            this.btRandom.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -139,15 +199,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nhập tên món:";
             // 
-            // btRandom
-            // 
-            this.btRandom.Location = new System.Drawing.Point(607, 100);
-            this.btRandom.Name = "btRandom";
-            this.btRandom.Size = new System.Drawing.Size(108, 34);
-            this.btRandom.TabIndex = 7;
-            this.btRandom.Text = "Random";
-            this.btRandom.UseVisualStyleBackColor = true;
-            // 
             // splitMain
             // 
             this.splitMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -179,6 +230,16 @@
             this.lvMon.UseCompatibleStateImageBehavior = false;
             this.lvMon.View = System.Windows.Forms.View.Details;
             // 
+            // lbNguoidonggop
+            // 
+            this.lbNguoidonggop.AutoSize = true;
+            this.lbNguoidonggop.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNguoidonggop.Location = new System.Drawing.Point(3, 279);
+            this.lbNguoidonggop.Name = "lbNguoidonggop";
+            this.lbNguoidonggop.Size = new System.Drawing.Size(115, 16);
+            this.lbNguoidonggop.TabIndex = 2;
+            this.lbNguoidonggop.Text = "Người đóng góp:";
+            // 
             // pbPic
             // 
             this.pbPic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -190,67 +251,6 @@
             this.pbPic.TabIndex = 1;
             this.pbPic.TabStop = false;
             // 
-            // lbNguoidonggop
-            // 
-            this.lbNguoidonggop.AutoSize = true;
-            this.lbNguoidonggop.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNguoidonggop.Location = new System.Drawing.Point(3, 279);
-            this.lbNguoidonggop.Name = "lbNguoidonggop";
-            this.lbNguoidonggop.Size = new System.Drawing.Size(115, 16);
-            this.lbNguoidonggop.TabIndex = 2;
-            this.lbNguoidonggop.Text = "Người đóng góp:";
-            // 
-            // cbNguoidonggop
-            // 
-            this.cbNguoidonggop.FormattingEnabled = true;
-            this.cbNguoidonggop.Location = new System.Drawing.Point(130, 86);
-            this.cbNguoidonggop.Name = "cbNguoidonggop";
-            this.cbNguoidonggop.Size = new System.Drawing.Size(169, 24);
-            this.cbNguoidonggop.TabIndex = 8;
-            // 
-            // checkNguoimoi
-            // 
-            this.checkNguoimoi.AutoSize = true;
-            this.checkNguoimoi.Location = new System.Drawing.Point(130, 63);
-            this.checkNguoimoi.Name = "checkNguoimoi";
-            this.checkNguoimoi.Size = new System.Drawing.Size(165, 20);
-            this.checkNguoimoi.TabIndex = 1;
-            this.checkNguoimoi.Text = "Người đóng góp mới?";
-            this.checkNguoimoi.UseVisualStyleBackColor = true;
-            // 
-            // tbNguoimoi
-            // 
-            this.tbNguoimoi.Location = new System.Drawing.Point(130, 86);
-            this.tbNguoimoi.Name = "tbNguoimoi";
-            this.tbNguoimoi.Size = new System.Drawing.Size(169, 24);
-            this.tbNguoimoi.TabIndex = 9;
-            // 
-            // tbQuyen
-            // 
-            this.tbQuyen.Location = new System.Drawing.Point(130, 116);
-            this.tbQuyen.Name = "tbQuyen";
-            this.tbQuyen.Size = new System.Drawing.Size(88, 24);
-            this.tbQuyen.TabIndex = 10;
-            // 
-            // lbQuyenmoi
-            // 
-            this.lbQuyenmoi.AutoSize = true;
-            this.lbQuyenmoi.Location = new System.Drawing.Point(42, 119);
-            this.lbQuyenmoi.Name = "lbQuyenmoi";
-            this.lbQuyenmoi.Size = new System.Drawing.Size(82, 16);
-            this.lbQuyenmoi.TabIndex = 11;
-            this.lbQuyenmoi.Text = "Quyền hạn:";
-            // 
-            // btXoa
-            // 
-            this.btXoa.Location = new System.Drawing.Point(493, 100);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(108, 34);
-            this.btXoa.TabIndex = 12;
-            this.btXoa.Text = "Xóa món";
-            this.btXoa.UseVisualStyleBackColor = true;
-            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
-            // 
             // Bai6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,7 +259,7 @@
             this.Controls.Add(this.splitMain);
             this.Controls.Add(this.grpNhap);
             this.Name = "Bai6";
-            this.Text = "Bai6";
+            this.Text = "Bài 06 - Hôm nay ăn gì? (phiên bản số 2)";
             this.Load += new System.EventHandler(this.Bai6_Load);
             this.grpNhap.ResumeLayout(false);
             this.grpNhap.PerformLayout();
