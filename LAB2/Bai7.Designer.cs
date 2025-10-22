@@ -28,12 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.treeFile = new System.Windows.Forms.TreeView();
+            this.imgPreview = new System.Windows.Forms.PictureBox();
+            this.rtbPreview = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgPreview)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.treeFile);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.imgPreview);
+            this.splitContainer1.Panel2.Controls.Add(this.rtbPreview);
+            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
+            this.splitContainer1.SplitterDistance = 266;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // treeFile
+            // 
+            this.treeFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeFile.Location = new System.Drawing.Point(0, 0);
+            this.treeFile.Name = "treeFile";
+            this.treeFile.Size = new System.Drawing.Size(266, 450);
+            this.treeFile.TabIndex = 0;
+            // 
+            // imgPreview
+            // 
+            this.imgPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imgPreview.Location = new System.Drawing.Point(0, 0);
+            this.imgPreview.Name = "imgPreview";
+            this.imgPreview.Size = new System.Drawing.Size(530, 450);
+            this.imgPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgPreview.TabIndex = 1;
+            this.imgPreview.TabStop = false;
+            // 
+            // rtbPreview
+            // 
+            this.rtbPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbPreview.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbPreview.Location = new System.Drawing.Point(0, 0);
+            this.rtbPreview.Name = "rtbPreview";
+            this.rtbPreview.ReadOnly = true;
+            this.rtbPreview.Size = new System.Drawing.Size(530, 450);
+            this.rtbPreview.TabIndex = 0;
+            this.rtbPreview.Text = "";
+            this.rtbPreview.WordWrap = false;
+            // 
+            // Bai7
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Bai7";
+            this.Controls.Add(this.splitContainer1);
+            this.Name = "Bai7";
+            this.Text = "Bài 7 - Duyệt thư mục ";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgPreview)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TreeView treeFile;
+        private System.Windows.Forms.RichTextBox rtbPreview;
+        private System.Windows.Forms.PictureBox imgPreview;
     }
 }
