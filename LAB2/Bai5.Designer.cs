@@ -385,7 +385,7 @@
             this.btThongke.UseVisualStyleBackColor = true;
             this.btThongke.Click += new System.EventHandler(this.btThongke_Click);
             // 
-            // Bai4
+            // Bai5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -419,8 +419,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cRoomA);
-            this.Name = "Bai4";
-            this.Text = "Bài 04 – Quản lý phòng vé ";
+            this.Name = "Bai5";
+            this.Text = "Bài 05 – Quản lý phòng vé PROMAX";
             this.Load += new System.EventHandler(this.Bai4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
