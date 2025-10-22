@@ -437,18 +437,30 @@ namespace LAB2
 
         private void btThongke_Click(object sender, EventArgs e)
         {
-
             var outPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "output5.txt");
             try
             {
+                pbExport.Visible = true;
+                pbExport.Style = ProgressBarStyle.Marquee;
+                pbExport.MarqueeAnimationSpeed = 30;
+                lbStatus.Visible = true;
+                lbStatus.Text = "Đang xuất thống kê...";
+
                 ExportThongKe(outPath);
-                MessageBox.Show("Đã xuất thống kê: " + outPath, "OK",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                lbStatus.Text = "Xuất xong.";
+                MessageBox.Show("Đã xuất thống kê: " + outPath, "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
+                lbStatus.Text = "Lỗi khi xuất.";
                 MessageBox.Show("Lỗi xuất thống kê: " + ex.Message);
             }
-    }
+            finally
+            {
+                pbExport.Style = ProgressBarStyle.Blocks;
+                pbExport.Visible = false;
+                lbStatus.Text = "";
+            }
+        }
     }
 }

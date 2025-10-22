@@ -57,6 +57,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cPhongchieu = new System.Windows.Forms.ComboBox();
             this.btThongke = new System.Windows.Forms.Button();
+            this.pbExport = new System.Windows.Forms.ProgressBar();
+            this.lbStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cRoomA
@@ -385,11 +387,30 @@
             this.btThongke.UseVisualStyleBackColor = true;
             this.btThongke.Click += new System.EventHandler(this.btThongke_Click);
             // 
+            // pbExport
+            // 
+            this.pbExport.Location = new System.Drawing.Point(408, 430);
+            this.pbExport.Name = "pbExport";
+            this.pbExport.Size = new System.Drawing.Size(100, 10);
+            this.pbExport.TabIndex = 30;
+            this.pbExport.Visible = false;
+            // 
+            // lbStatus
+            // 
+            this.lbStatus.AutoSize = true;
+            this.lbStatus.Location = new System.Drawing.Point(354, 428);
+            this.lbStatus.Name = "lbStatus";
+            this.lbStatus.Size = new System.Drawing.Size(10, 13);
+            this.lbStatus.TabIndex = 31;
+            this.lbStatus.Text = " ";
+            // 
             // Bai5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 450);
+            this.Controls.Add(this.lbStatus);
+            this.Controls.Add(this.pbExport);
             this.Controls.Add(this.btThongke);
             this.Controls.Add(this.cPhongchieu);
             this.Controls.Add(this.label5);
@@ -458,5 +479,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cPhongchieu;
         private System.Windows.Forms.Button btThongke;
+        private System.Windows.Forms.ProgressBar pbExport;
+        private System.Windows.Forms.Label lbStatus;
     }
 }
